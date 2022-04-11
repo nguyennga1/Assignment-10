@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	*{box-sizing: border-box;}
+div.container {
+    width: 80%;
+    border: 1px solid gray;
+	margin: 0 auto;
+}
+
+header, footer {
+    padding-top: 1em;
+    color: white;
+    background-color:#393939;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    background-color: #918D8E;
+	padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #918D8E;
+	}
+	
+
+/*nav ul {
+    list-style-type: none;
+    padding: 0;
+	margin: 0;
+	background-color: #918D8E;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}*/
+	
+nav ul li{
+	float: left;
+	width: 25%;
+	}
+	
+ ul a {
+    text-decoration: none;
+	color: #fff;
+}
+
+article {
+	width: 100%;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+div.main{
+		
+	}
+	.slideshow{
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.slideshow a{
+		flex-basis: auto;
+	}
+    .cycle-slideshow img{
+		width: 100%;
+	}
+</style>
+	
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Photo Gallery</h1>
+	 <nav>
+    <ul>
+		<li><a href="#">Home</a></li>
+      <li><a href="#">Portraits</a></li>
+      <li><a href="#">Landscapes</a></li>
+      <li><a href="#">Weddings</a></li>
+      </ul>
+  </nav>
+</header>
+<div class="slideshow">
+	<div class="cycle-slideshow">
+		<div class="cycle-slideshow"
+     data-cycle-fx="scrollHorz"
+	 data-cycle-timeout="0"
+     data-cycle-prev="#prev"
+     data-cycle-next="#next"
+    >
+		<img src="https://malsup.github.io/images/p1.jpg">
+		<img src="https://malsup.github.io/images/p2.jpg">
+		<img src="https://malsup.github.io/images/p3.jpg">
+		<img src="https://malsup.github.io/images/p4.jpg">
+	</div>
+	<div class="center">
+		<a href=# id="prev">Prev</a> 
+		<a href=# id="next">Next</a>
+	</div>
+<div class="main">
+  <article>
+    <h1>Photos</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nihil possimus! Labore amet asperiores in porro? Illum quasi vel necessitatibus minus molestiae ut, modi, explicabo incidunt, atque ipsam aspernatur voluptatum.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</div>
+<footer>Copyright &copy; W3Schools.com</footer>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+</body>
+</html>
+
